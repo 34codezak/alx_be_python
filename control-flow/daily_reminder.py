@@ -19,5 +19,5 @@ else:
     time_message = "No immediate action is required."
 
 # Provide a customized reminder
-print(f"Task: {task}")
+print(f"Reminder: {task}")
 print(f'{priority_message} {time_message}')
