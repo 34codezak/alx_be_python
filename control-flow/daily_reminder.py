@@ -13,11 +13,11 @@ match priority:
         priority_message = "Unknown priority."
 
 # Check if the task is time-bound and modify the reminder accordingly
-if time_bound == 'yes':
+if time_bound == "yes":
     time_message = "That requires immediate attention today!"
 else:
     time_message = "No immediate action is required."
 
 # Provide a customized reminder
-print('Task: {task}')
+print(f"Task: {task}")
 print(f'{priority_message} {time_message}')
