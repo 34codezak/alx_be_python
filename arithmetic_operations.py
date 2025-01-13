@@ -12,6 +12,7 @@ def perform_operation(num1: float, num2: float, operation: str):
             return num1 / num2
     else:
         return "Error: Invalid operation"
+
 # Example usage:
 # result = perform_operation(10, 2, 'divide')
 # print(result)
