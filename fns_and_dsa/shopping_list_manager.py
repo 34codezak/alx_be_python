@@ -1,11 +1,11 @@
 shopping_list = []
 
 def display_menu():
-    print("\nShopping List Manager")
-    print("1. Add an item")
-    print("2. Remove an item")
-    print("3. View the shopping list")
-    print("4. Exit")
+    print(f"\nShopping List Manager")
+    print(f"1. Add an item")
+    print(f"2. Remove an item")
+    print(f"3. View the shopping list")
+    print(f"4. Exit")
 
 def add_item():
     item = input("Enter the name of the item to add: ")
