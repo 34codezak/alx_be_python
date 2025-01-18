@@ -36,4 +36,4 @@ class BankAccount:
         """
         Display the current balance in a user-friendly format.
         """
-        print(f"Current balance:")
+        print(f"Current Balance:")
