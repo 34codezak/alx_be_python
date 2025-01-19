@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self, title, author):
+    def __init__(self):
         self.title = title
         self.author = author
         self._is_checked_out = False 
@@ -57,5 +57,5 @@ class Library:
                 print(book)
         else:
             print("No books are available.")
-            
+
         
