@@ -20,7 +20,7 @@ class Book:
 
 #Example usage
 if __name__ == "__main__":
-    book1 = Book("1984", by "George Orwell", 1949)
+    book1 = Book("1984", "by" "George Orwell", 1949)
     print(book1) #This will call __str__ method
     print(repr(book1)) #This will call __repe__ method
 
