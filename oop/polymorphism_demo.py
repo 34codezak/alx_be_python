@@ -19,7 +19,7 @@ class Circle(Shape):
         return math.pi * (self.radius ** 2)
 
 #Usage:
-if __name__ == "__main__"
+if __name__ == "__main__":
     #Create instances of Rectangle and Circle
     rectangle = Rectangle(5, 3)
     circle = Circle(4)
