@@ -4,9 +4,7 @@ class Book:
         self.author = author 
         self.year = year
 
-        #Destructor method to handle object declaration
-        def __del__(self):
-            print(f"Deleting {self.title}")
+        
 
         #String representation method for user-friendly output
         def __str__(self):
@@ -15,10 +13,14 @@ class Book:
             #Official representation method for debugging or object creation
             def __repr__(self):
                 return f"Book('{self.title}', '{self.author}', '{self.year}')"
+        
+        #Destructor method to handle object declaration
+        def __del__(self):
+            print(f"Deleting {self.title}")
 
 #Example usage
 if __name__ == "__main__":
-    book1 = Book("1984", "George Orwell", 1949)
+    book1 = Book("1984", by "George Orwell", 1949)
     print(book1) #This will call __str__ method
     print(repr(book1)) #This will call __repe__ method
 
