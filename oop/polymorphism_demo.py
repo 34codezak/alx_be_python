@@ -5,7 +5,7 @@ class Shape:
         raise NoImplementedError("Subclass must implement abstract method 'area'")
 
 #Derived class: Rectangle
-class Rectangle(SHape):
+class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
         self.width = width
