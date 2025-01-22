@@ -1,3 +1,5 @@
+import math
+
 class Shape:
     def area(self):
         raise NoImplementedError("Subclass must implement abstract method 'area'")
