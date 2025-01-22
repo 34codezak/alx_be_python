@@ -5,7 +5,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return f"Title: {self.title}, Author: {self.author}"
+        return f"Book: {self.title}, by {self.author}"
 
 # Derived Class: EBook
 class EBook(Book):
@@ -15,7 +15,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def __str__(self):
-        return f"{super().__str__()}, File Size: {self.file_size}MB"
+        return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 # Derived Class: PrintBook
 class PrintBook(Book):
@@ -25,7 +25,7 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def __str__(self):
-        return f"{super().__str__()}, Page Count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 # Composition Class: Library
 class Library:
@@ -41,6 +41,20 @@ class Library:
         else:
             for book in self.books:
                 print(book)
+
+# Create a library and add books to it
+library = Library()
+library.add_book(book1)
+library.add_book(ebook1)
+library.add_book(printbook1)
+
+# List all books in the library
+library.list_books()
+
+# Create instances of each class
+book1 = Book("Pride and Prejudice", "Jane Austen")
+ebook1 = EBook("Snow Crash", "Neal Stephenson", 500)
+printbook1 = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
 """Explanation of library_system.py:
 Base Class - Book:
