@@ -16,6 +16,7 @@ class Rectangle(Shape):
 #Derived class: Circle
 class Circle(Shape):
     def __init__(self, radius):
+        self.radius = radius
         return math.pi * (self.radius ** 2)
 
 #Usage:
