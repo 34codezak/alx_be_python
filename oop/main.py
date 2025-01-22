@@ -1,4 +1,4 @@
-from book_class import Book
+from library_system import Book, EBook, PrintBook, Library
 
 def main():
     # Creating an instance of Book

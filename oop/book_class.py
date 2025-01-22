@@ -8,7 +8,7 @@ class Book:
 
         #String representation method for user-friendly output
         def __str__(self):
-            return f"Book('{self.title}', '{self.author}', '{self.year}')"
+            return f"{self.title} by {self.author}, published in {self.year}"
 
             #Official representation method for debugging or object creation
             def __repr__(self):
@@ -20,7 +20,7 @@ class Book:
 
 #Example usage
 if __name__ == "__main__":
-    book1 = Book("1984", "by" "George Orwell", "published in" 1949)
+    book1 = Book("1984", "George Orwell", 1949)
     print(book1) #This will call __str__ method
     print(repr(book1)) #This will call __repe__ method
 
