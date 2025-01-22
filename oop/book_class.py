@@ -2,7 +2,7 @@ class Book:
     def __init__(self, title, author, year):
         self.title = title
         self.author = author 
-        self.age = age
+        self.year = year
 
         #Destructor method to handle object declaration
         def __del__(self):
@@ -14,7 +14,7 @@ class Book:
 
             #Official representation method for debugging or object creation
             def __repr__(self):
-                return f"Book ('{self.title}', '{self.author}', '{self.year}')"
+                return f"Book('{self.title}', '{self.author}', '{self.year}')"
 
 #Example usage
 if __name__ == "__main__":
